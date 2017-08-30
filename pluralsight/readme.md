@@ -1,5 +1,7 @@
 
-## Plural Sight
+## Plural Sight links
+
+https://www.pluralsight.com/paths/javascript
 
 ## Motivation
 
