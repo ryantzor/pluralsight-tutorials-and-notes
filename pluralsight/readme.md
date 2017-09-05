@@ -1,5 +1,6 @@
 
 ## Plural Sight links
+All credit for code examples goes to pluralsight
 
 https://www.pluralsight.com/paths/javascript
 
