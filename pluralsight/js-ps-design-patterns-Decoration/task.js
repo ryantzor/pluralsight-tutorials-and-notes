@@ -31,8 +31,8 @@ myTask.save();
 /** 
 	Decoration starts here. We are adding functionality to the original task in our new Urgent task object.
 	
-	<!> We can even edit the save function to be a function (line 45)
-	<!> (line 47) we can also call the originial Task save method on this line we can do .call(this)
+	<!> We can even edit the save function to be a function (line 49)
+	<!> (line 51) we can also call the originial Task save method on this line we can do .call(this)
 	which allows us to use the "this" keyword and bind the save method from the original Task obj
 
 **/
@@ -52,6 +52,7 @@ urgentTask.save = function(){
 	};
 
 urgentTask.save();
+
 
 
 
