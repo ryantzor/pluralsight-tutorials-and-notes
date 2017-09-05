@@ -17,6 +17,8 @@
 
 **/
 
+var Repo = require('./taskrepository');
+
 
 var Task = function(data) {
 	this.name = data.name;
@@ -30,6 +32,7 @@ Task.prototype.complete = function (){
 
 Task.prototype.save = function(){
 		console.log('saving Task: ' + this.name);
+		Repo.save(this);
 }
 
 
