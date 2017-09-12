@@ -11,6 +11,8 @@
 
 var Task = function (data) {
     this.flyweight = FlyweightFactory.get(data.project, data.priority, data.user, data.completed);
+    //the only unique thing about the task is the .name . Therefore we leave it in the constructor of the task
+    //and move everything else to the flyweight factory
     this.name = data.name;
     //this.priority = data.priority;
     //this.project = data.project;
@@ -21,6 +23,7 @@ var Task = function (data) {
 Task.prototype.getPriority = function () {
     this.flyweight.priority;
 };
+
 function Flyweight(project, priority, user, completed) {
     this.priority = priority;
     this.project = project;
@@ -47,7 +50,7 @@ var FlyweightFactory = function () {
         get: get,
         getCount: getCount
     }
-}()
+}();
 
 function TaskCollection() {
     var tasks = {};
